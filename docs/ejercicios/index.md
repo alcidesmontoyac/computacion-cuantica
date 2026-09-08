@@ -12,6 +12,14 @@ Series de ejercicios por capítulo para afianzar los conceptos. Empieza por los 
 
     [:octicons-arrow-right-24: Resolver](capitulo-01.md)
 
+-   :material-help-circle:{ .lg .middle } __Quiz — Capítulo 1__
+
+    ---
+
+    Diez preguntas de opción múltiple que se **califican solas**: responde y ve tu puntaje y la explicación de cada una al instante.
+
+    [:octicons-arrow-right-24: Presentar quiz](quiz-capitulo-01.md)
+
 -   __Capítulo 2__
 
     ---

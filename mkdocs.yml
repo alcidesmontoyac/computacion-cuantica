@@ -131,6 +131,7 @@ nav:
   - Ejercicios:
       - ejercicios/index.md
       - Capítulo 1: ejercicios/capitulo-01.md
+      - Quiz — Capítulo 1: ejercicios/quiz-capitulo-01.md
       - Capítulo 2: ejercicios/capitulo-02.md
   - Recursos:
       - recursos/index.md

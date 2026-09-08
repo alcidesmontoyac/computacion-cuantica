@@ -34,6 +34,10 @@ En esta clase recorrimos la parte final del Capítulo 1 (de la diapositiva 13 ha
 
 Con esta clase termina el [Capítulo 1](../libro/capitulo-01.md) del libro guía.
 
+## Autoevaluación
+
+Cierra el capítulo con el [**Quiz del Capítulo 1**](../ejercicios/quiz-capitulo-01.md): diez preguntas autocalificables sobre todo lo visto en las tres primeras clases.
+
 ---
 
 !!! question "Para pensar antes del Capítulo 2"

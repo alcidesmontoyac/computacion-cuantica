@@ -37,5 +37,8 @@ Intenta cada ejercicio antes de mirar la solución.
 
 ---
 
+!!! success "Ponte a prueba"
+    Cuando termines, presenta el [**Quiz del Capítulo 1**](quiz-capitulo-01.md): diez preguntas que se califican solas, con explicación de cada respuesta.
+
 !!! tip "¿Encontraste un error o quieres proponer un ejercicio?"
     Escríbelo en clase o abre un *issue* en el repositorio del sitio.
