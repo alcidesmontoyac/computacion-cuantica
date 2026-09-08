@@ -1,0 +1,138 @@
+# =====================================================================
+#  Introducción a la computación cuántica
+#  Centro de Excelencia en Computación Cuántica e Inteligencia Artificial
+#  Departamento de Física — Universidad Nacional de Colombia, Sede Medellín
+# =====================================================================
+site_name: Computación cuántica
+site_description: >-
+  Curso y libro "Introducción a la computación cuántica" — un espacio de
+  estudio en español del Centro de Excelencia en Computación Cuántica e
+  Inteligencia Artificial, Departamento de Física, Universidad Nacional de
+  Colombia, Sede Medellín.
+site_author: Prof. Alcides Montoya Cañola
+
+# --- CAMBIA estas tres líneas por tu usuario/repositorio de GitHub ----
+site_url: https://alcidesmontoyac.github.io/computacion-cuantica/
+repo_url: https://github.com/alcidesmontoyac/computacion-cuantica
+repo_name: alcidesmontoyac/computacion-cuantica
+edit_uri: edit/main/docs/
+# ----------------------------------------------------------------------
+
+copyright: >-
+  © 2026 Centro de Excelencia en Computación Cuántica e Inteligencia Artificial ·
+  Departamento de Física · Universidad Nacional de Colombia, Sede Medellín ·
+  Contenido bajo licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a>
+
+theme:
+  name: material
+  language: es
+  logo: assets/img/logo.svg
+  favicon: assets/img/favicon.svg
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - content.tabs.link
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - javascripts/tex-mml-svg.js
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      permalink_title: Enlace a esta sección
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/alcidesmontoyac
+      name: GitHub
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/
+      name: Canal de YouTube del curso
+  generator: false
+
+nav:
+  - Inicio: index.md
+  - Curso:
+      - curso/index.md
+      - Clase 1 — ¿Qué es un qubit?: curso/clase-01.md
+      - Clase 2 — Esfera de Bloch y NISQ: curso/clase-02.md
+      - Clase 3 — Aplicaciones y cierre del Cap. 1: curso/clase-03.md
+      - Clase 4 — Fundamentos matemáticos: curso/clase-04.md
+  - Libro:
+      - libro/index.md
+      - Cap. 1 — Introducción y aplicaciones: libro/capitulo-01.md
+      - Cap. 2 — Fundamentos matemáticos: libro/capitulo-02.md
+      - Cap. 3 — Mecánica cuántica: libro/capitulo-03.md
+      - Cap. 4 — Información cuántica: libro/capitulo-04.md
+  - Prácticas:
+      - practicas/index.md
+      - Práctica 1 — Tu primer qubit: practicas/practica-01-primer-qubit.md
+      - Práctica 2 — Bra-ket y matrices de Pauli: practicas/practica-02-braket-pauli.md
+  - Ejercicios:
+      - ejercicios/index.md
+      - Capítulo 1: ejercicios/capitulo-01.md
+      - Capítulo 2: ejercicios/capitulo-02.md
+  - Recursos:
+      - recursos/index.md
+      - Papers y lecturas: recursos/papers.md
+  - El Centro: centro/index.md

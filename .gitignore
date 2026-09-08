@@ -1,0 +1,20 @@
+# Build de MkDocs
+site/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+
+# Carpetas de trabajo (no son del sitio)
+_borrar/
+Claude outputs/
+videos-clases/
+
+# Materiales privados o pesados que NO se publican
+*.tex
+/*.pdf
+*.xls
+*.xlsx
+*.docx
+/afiche_curso.png
+/afiche_curso.jpg
