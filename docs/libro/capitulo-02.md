@@ -4,9 +4,13 @@
 
 El lenguaje del curso: álgebra lineal compleja y notación de Dirac, con las matrices de Pauli y el espacio de Hilbert como destino.
 
+## Leer el capítulo
+
+[:material-book-open-page-variant: Leer el Capítulo 2 (PDF)](../assets/libro/capitulo-02.pdf){ .md-button .md-button--primary }
+
 ## Diapositivas
 
-[:material-file-download: Descargar diapositivas del Capítulo 2](../assets/slides/cap02_fundamentos.pdf){ .md-button .md-button--primary }
+[:material-file-download: Descargar diapositivas del Capítulo 2](../assets/slides/cap02_fundamentos.pdf){ .md-button }
 
 ## Temas
 

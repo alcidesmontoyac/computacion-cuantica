@@ -1,12 +1,16 @@
 # Capítulo 3 — Mecánica cuántica
 
-<span class="qc-badge gold">Semana 4</span>
+<span class="qc-badge gold">Clase 5</span>
 
 La física detrás del formalismo: de la mecánica clásica a la cuántica, la ecuación de Schrödinger y los cinco postulados.
 
+## Leer el capítulo
+
+[:material-book-open-page-variant: Leer el Capítulo 3 (PDF)](../assets/libro/capitulo-03.pdf){ .md-button .md-button--primary }
+
 ## Diapositivas
 
-[:material-file-download: Descargar diapositivas del Capítulo 3](../assets/slides/cap03_mecanica_cuantica.pdf){ .md-button .md-button--primary }
+[:material-file-download: Descargar diapositivas del Capítulo 3](../assets/slides/cap03_mecanica_cuantica.pdf){ .md-button }
 
 ## Temas
 

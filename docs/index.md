@@ -52,7 +52,7 @@ Usa el menú de arriba para navegar. Esto es lo que hay en cada sección:
 
     ---
 
-    El libro guía por **capítulos**: un resumen de cada uno, sus diapositivas y —cuando estén disponibles— los PDF del capítulo para leer.
+    El libro guía por **capítulos**: un resumen de cada uno, sus diapositivas y el **PDF del capítulo** para leer y descargar.
 
     [:octicons-arrow-right-24: Ver capítulos](libro/index.md)
 

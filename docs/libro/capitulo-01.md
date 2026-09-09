@@ -4,9 +4,13 @@
 
 Un recorrido conceptual: qué es la computación cuántica, por qué existe, los inicios del campo, el panorama del hardware actual y las aplicaciones reales frente al bombo.
 
+## Leer el capítulo
+
+[:material-book-open-page-variant: Leer el Capítulo 1 (PDF)](../assets/libro/capitulo-01.pdf){ .md-button .md-button--primary }
+
 ## Diapositivas
 
-[:material-file-download: Descargar diapositivas del Capítulo 1](../assets/slides/cap01_introduccion.pdf){ .md-button .md-button--primary }
+[:material-file-download: Descargar diapositivas del Capítulo 1](../assets/slides/cap01_introduccion.pdf){ .md-button }
 
 ## Temas
 
