@@ -1,29 +1,41 @@
-# Clase 4 — Fundamentos matemáticos
+# Clase 4 — Internet cuántico y arranque de las matemáticas
 
-<span class="qc-badge">Clase 4</span> <span class="qc-badge teal">Capítulo 2</span> <span class="qc-badge gold">Próximamente</span>
+<span class="qc-badge">Clase 4</span> <span class="qc-badge teal">Capítulo 2</span> <span class="qc-badge gold">Complemento Cap. 1</span>
 
-Empezamos la **parte matemática** del curso: el lenguaje con el que se escribe toda la computación cuántica. Notación de Dirac, producto interno, y las matrices de Pauli.
+Cerramos la parte conceptual con un caso real de frontera —el **internet cuántico**— y damos el primer paso hacia el formalismo matemático que sostiene todo el curso: comenzamos el **Capítulo 2** hasta los números complejos.
 
-!!! info "Clase en vivo"
-    Esta clase se dicta en vivo el próximo día de sesión (lunes o miércoles, 5–7 p. m.) por [Google Meet](https://meet.google.com/keq-szhh-hsp). El video quedará aquí publicado después. Mientras tanto, ya puedes estudiar las diapositivas y adelantar la práctica.
+## Video de la clase
+
+<div class="qc-video">
+<iframe src="https://www.youtube.com/embed/00PTjz3Bfn0" title="Clase 4 — Internet cuántico y arranque de las matemáticas" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+[:material-youtube: Ver la Clase 4 en YouTube](https://youtu.be/00PTjz3Bfn0)
 
 ## Temas de la clase
 
-- Mezcla clásica vs. superposición cuántica: probabilidades vs. **amplitudes**.
-- Regla de Born y el término de interferencia.
-- Notación de Dirac: **bra**, **ket** y producto interno \( \langle\phi|\psi\rangle \).
-- Bases estándar y de Hadamard; producto externo y proyectores.
-- Autovalores y autovectores; las **matrices de Pauli** \( \sigma_x, \sigma_y, \sigma_z \).
-- Hermíticas (observables) y unitarias (evolución); el teorema espectral.
-- Producto tensorial: el origen del crecimiento \(2^n\); el espacio de Hilbert.
+- Entrelazamiento **átomo-fotón**: el ladrillo del internet cuántico.
+- Cómo se produce ese entrelazamiento y por qué importa (repetidores, red metropolitana).
+- De los **bits** a los estados cuánticos.
+- Mezcla clásica vs. superposición: **probabilidades** vs. **amplitudes**.
+- Por qué la naturaleza necesita **números complejos** (la interferencia de la doble rendija).
+- La **regla de Born**.
+- Repaso de números complejos: unidad imaginaria, forma polar y operaciones.
 
-## Diapositivas
+## Artículo discutido en clase
 
-[:material-file-download: Descargar diapositivas (Cap. 2)](../assets/slides/cap02_fundamentos.pdf){ .md-button .md-button--primary }
+Las diapositivas complementarias parten de este artículo de *Physical Review Letters*:
 
-## Lectura
+[:material-file-document-outline: Metropolitan Entanglement Distribution between an Atom and a Near-Visible Photon](https://journals.aps.org/prl/abstract/10.1103/94hz-xtht){ .md-button }
 
-Capítulo 2 del libro. Ver la página del [Capítulo 2](../libro/capitulo-02.md).
+[:material-file-download: Diapositivas del complemento (entrelazamiento átomo-fotón)](../assets/slides/complemento_atomo_foton.pdf){ .md-button }
+
+## Diapositivas y lectura
+
+[:material-book-open-page-variant: Leer el Capítulo 2 (PDF)](../assets/libro/capitulo-02.pdf){ .md-button .md-button--primary }
+[:material-file-download: Diapositivas (Cap. 2)](../assets/slides/cap02_fundamentos.pdf){ .md-button }
+
+Página del [Capítulo 2](../libro/capitulo-02.md) del libro.
 
 ## Práctica
 
@@ -36,4 +48,4 @@ Capítulo 2 del libro. Ver la página del [Capítulo 2](../libro/capitulo-02.md)
 ---
 
 !!! question "Para pensar"
-    Una fase global \( e^{i\theta} \) no cambia ninguna probabilidad. Entonces, ¿es la fase "real" o un artefacto matemático? ¿Por qué las fases **relativas** sí importan?
+    Si una mezcla clásica y una superposición cuántica pueden dar las mismas probabilidades al medir, ¿qué las distingue realmente? ¿Y por qué la naturaleza necesitaría números **complejos**, y no bastan los reales?
