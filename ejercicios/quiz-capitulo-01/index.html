@@ -1,0 +1,1772 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Curso y libro "Introducción a la computación cuántica" — un espacio de estudio en español del Centro de Excelencia en Computación Cuántica e Inteligencia Artificial, Departamento de Física, Universidad Nacional de Colombia, Sede Medellín.">
+      
+      
+        <meta name="author" content="Prof. Alcides Montoya Cañola">
+      
+      
+        <link rel="canonical" href="https://alcidesmontoyac.github.io/computacion-cuantica/ejercicios/quiz-capitulo-01/">
+      
+      
+        <link rel="prev" href="../capitulo-01/">
+      
+      
+        <link rel="next" href="../capitulo-02/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/img/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Quiz — Capítulo 1 - Computación cuántica</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quiz-capitulo-1" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Computación cuántica" class="md-header__button md-logo" aria-label="Computación cuántica" data-md-component="logo">
+      
+  <img src="../../assets/img/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Computación cuántica
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Quiz — Capítulo 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/alcidesmontoyac/computacion-cuantica" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alcidesmontoyac/computacion-cuantica
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../curso/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Curso
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../libro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Libro
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../practicas/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Prácticas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Ejercicios
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../recursos/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Recursos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../centro/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  El Centro
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Computación cuántica" class="md-nav__button md-logo" aria-label="Computación cuántica" data-md-component="logo">
+      
+  <img src="../../assets/img/logo.svg" alt="logo">
+
+    </a>
+    Computación cuántica
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/alcidesmontoyac/computacion-cuantica" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alcidesmontoyac/computacion-cuantica
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../curso/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Curso
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../curso/clase-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clase 1 — ¿Qué es un qubit?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../curso/clase-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clase 2 — Esfera de Bloch y NISQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../curso/clase-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clase 3 — Aplicaciones y cierre del Cap. 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../curso/clase-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clase 4 — Fundamentos matemáticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../libro/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Libro
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Libro
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libro/capitulo-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cap. 1 — Introducción y aplicaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libro/capitulo-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cap. 2 — Fundamentos matemáticos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libro/capitulo-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cap. 3 — Mecánica cuántica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libro/capitulo-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cap. 4 — Información cuántica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../practicas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prácticas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Prácticas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practicas/practica-01-primer-qubit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Práctica 1 — Tu primer qubit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practicas/practica-02-braket-pauli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Práctica 2 — Bra-ket y matrices de Pauli
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ejercicios
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Ejercicios
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quiz — Capítulo 1
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quiz — Capítulo 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#version-para-calificacion-google-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versión para calificación (Google Forms)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../recursos/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursos
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Recursos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recursos/papers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Papers y lecturas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../centro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    El Centro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#version-para-calificacion-google-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versión para calificación (Google Forms)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/alcidesmontoyac/computacion-cuantica/edit/main/docs/ejercicios/quiz-capitulo-01.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="quiz-capitulo-1">Quiz — Capítulo 1<a class="headerlink" href="#quiz-capitulo-1" title="Enlace a esta sección">&para;</a></h1>
+<p><span class="qc-badge">Autoevaluación</span> <span class="qc-badge teal">10 preguntas</span> <span class="qc-badge gold">Se califica solo</span></p>
+<p>Pon a prueba lo que entendiste del Capítulo 1: superposición, la muralla exponencial, el panorama del hardware y cómo separar el bombo de la evidencia. Responde las diez preguntas y pulsa <strong>Calificar</strong>: verás tu puntaje y la explicación de cada una al instante. Puedes repetirlo las veces que quieras.</p>
+<div class="admonition tip">
+<p class="admonition-title">¿Para nota?</p>
+<p>Esta versión es para estudiar (nadie recibe tus respuestas). Si tu profesor abrió la versión para calificación, el enlace de Google Forms estará al final de esta página.</p>
+</div>
+<div id="qc-quiz" class="qc-quiz">
+  <div class="qcq-head">
+    <label class="qcq-name">Tu nombre (opcional, para tu captura):
+      <input type="text" id="qcq-student" placeholder="Escribe tu nombre">
+    </label>
+  </div>
+  <form id="qcq-form"></form>
+  <div class="qcq-actions">
+    <button type="button" id="qcq-grade" class="qcq-btn primary">Calificar</button>
+    <button type="button" id="qcq-reset" class="qcq-btn ghost">Reiniciar</button>
+  </div>
+  <div id="qcq-result" class="qcq-result" hidden></div>
+</div>
+
+<style>
+.qc-quiz{--v:#6d28d9;--t:#0d9488;--ok:#15803d;--no:#b91c1c;--line:rgba(0,0,0,.12);
+  margin:1.2rem 0;font-size:.92rem;}
+.qc-quiz .qcq-head{margin:.4rem 0 1rem;}
+.qc-quiz .qcq-name{display:block;font-weight:600;font-size:.82rem;}
+.qc-quiz .qcq-name input{display:block;margin-top:.3rem;padding:.5rem .6rem;width:min(360px,100%);
+  border:1px solid var(--line);border-radius:8px;font-size:.9rem;background:var(--md-default-bg-color,#fff);color:inherit;}
+.qcq-q{border:1px solid var(--line);border-left:4px solid var(--v);border-radius:10px;
+  padding:.9rem 1rem;margin:.8rem 0;background:rgba(124,58,237,.03);}
+.qcq-q .qcq-num{font-weight:800;color:var(--v);margin-right:.35rem;}
+.qcq-q .qcq-stem{font-weight:600;margin-bottom:.6rem;line-height:1.45;}
+.qcq-opt{display:flex;gap:.55rem;align-items:flex-start;padding:.4rem .55rem;border-radius:8px;
+  cursor:pointer;margin:.2rem 0;border:1px solid transparent;transition:background .15s;}
+.qcq-opt:hover{background:rgba(13,148,136,.07);}
+.qcq-opt input{margin-top:.2rem;flex:0 0 auto;}
+.qcq-opt.correct{background:rgba(21,128,61,.12);border-color:rgba(21,128,61,.4);}
+.qcq-opt.wrong{background:rgba(185,28,28,.10);border-color:rgba(185,28,28,.4);}
+.qcq-mark{font-weight:800;margin-left:.2rem;}
+.qcq-mark.ok{color:var(--ok);}
+.qcq-mark.no{color:var(--no);}
+.qcq-expl{margin:.55rem 0 .1rem;padding:.55rem .7rem;border-radius:8px;font-size:.85rem;
+  background:rgba(13,148,136,.09);border-left:3px solid var(--t);line-height:1.5;}
+.qcq-expl b{color:var(--t);}
+.qcq-actions{display:flex;gap:.6rem;margin:1.1rem 0;flex-wrap:wrap;}
+.qcq-btn{padding:.6rem 1.2rem;border-radius:9px;font-weight:700;font-size:.9rem;border:0;cursor:pointer;}
+.qcq-btn.primary{background:var(--v);color:#fff;}
+.qcq-btn.ghost{background:transparent;border:1px solid var(--line);color:inherit;}
+.qcq-btn:hover{filter:brightness(1.06);}
+.qcq-result{padding:1rem 1.2rem;border-radius:12px;font-size:1rem;font-weight:600;line-height:1.5;
+  border:1px solid var(--line);}
+.qcq-result .score{font-size:1.8rem;font-weight:800;display:block;margin-bottom:.2rem;}
+.qcq-result.good{background:rgba(21,128,61,.10);border-color:rgba(21,128,61,.4);}
+.qcq-result.mid{background:rgba(207,169,78,.14);border-color:rgba(207,169,78,.5);}
+.qcq-result.low{background:rgba(185,28,28,.09);border-color:rgba(185,28,28,.4);}
+.qcq-warn{color:var(--no);font-weight:700;margin:.4rem 0;}
+</style>
+
+<script>
+(function(){
+  const QUIZ = [
+    {
+      stem: "Un qubit está en la superposición |ψ⟩ = α|0⟩ + β|1⟩ antes de medirlo. ¿Cuál afirmación es correcta?",
+      options: [
+        "Ya tiene un valor definido (0 o 1); la superposición solo describe nuestra ignorancia, como una moneda girando.",
+        "No tiene un valor definido; α y β son amplitudes complejas y las probabilidades de medir son |α|² y |β|², con |α|²+|β|²=1.",
+        "Es una mezcla estadística 50/50 de 0 y 1, igual que lanzar una moneda al aire.",
+        "Sus componentes son probabilidades que suman 1, así que (½, ½) sería un qubit válido."
+      ],
+      correct: 1,
+      expl: "La superposición no es ignorancia clásica. En una mezcla clásica el sistema ya tiene valor y las componentes son probabilidades (suman 1). En un qubit las componentes son amplitudes complejas cuyo módulo al cuadrado da la probabilidad: |α|²+|β|²=1. Por eso (½,½) no es un qubit, pero (1/√2, 1/√2) sí."
+    },
+    {
+      stem: "¿Por qué la mecánica cuántica exige números complejos y no le bastan los reales?",
+      options: [
+        "Para garantizar que las probabilidades sumen 1.",
+        "Porque las amplitudes con fase permiten la interferencia: dos caminos pueden cancelarse (término 2·Re[ψ₁*ψ₂]), algo imposible con probabilidades clásicas.",
+        "Es solo una conveniencia de notación; con reales se puede hacer todo igual.",
+        "Porque el espín del electrón obliga a usar matrices de 2×2."
+      ],
+      correct: 1,
+      expl: "La física clásica usa números reales; la cuántica exige complejos porque son la fuente de la interferencia. Al sumar amplitudes aparece el término cruzado 2·Re[ψ₁*ψ₂], que puede ser negativo y cancelar caminos (como en la doble rendija). Ese término no existe en la probabilidad clásica."
+    },
+    {
+      stem: "La penicilina (~41 átomos) se modela con 286 espín-orbitales, y el costo clásico es 2²⁸⁶ ≈ 1.2×10⁸⁶. ¿Cuál es la lectura correcta?",
+      options: [
+        "Hay 286 electrones, uno por qubit, y por eso se necesitan 286 qubits.",
+        "Cada espín-orbital (casilla) está vacío u ocupado: con M casillas hay 2^M configuraciones que el clásico debe almacenar como amplitudes, mientras el cuántico las encarna en M=286 qubits físicos.",
+        "2²⁸⁶ es el número de compuertas que tendría el circuito cuántico.",
+        "El computador cuántico también debe guardar los 2²⁸⁶ números, solo que los procesa más rápido."
+      ],
+      correct: 1,
+      expl: "Son 176 electrones acomodados en 286 casillas. La función de onda es una superposición sobre las 2^M ocupaciones posibles; el clásico tendría que guardar 2²⁸⁶ amplitudes (más que átomos en el universo, ~10⁸⁰). El cuántico no las guarda: las encarna en 286 qubits físicos. Recurso lineal, capacidad exponencial."
+    },
+    {
+      stem: "El capítulo contrasta la IA moderna con la computación cuántica ante espacios exponenciales. ¿Cuál es el contraste correcto?",
+      options: [
+        "Ambas representan el espacio de estados de forma exacta, solo que la cuántica es más veloz.",
+        "El aprendizaje profundo renuncia a la exactitud (aproxima con datos y descenso por gradiente: sacrifica rigor por escala); lo cuántico representa el espacio exponencial de forma exacta, encarnándolo en hardware (conserva rigor, al precio de hardware pequeño).",
+        "La IA es exacta y lo cuántico es aproximado.",
+        "Ninguna de las dos aborda realmente espacios exponenciales."
+      ],
+      correct: 1,
+      expl: "El puente con la IA del capítulo: el aprendizaje profundo ataca lo exponencial 'al revés', renunciando a la exactitud para ganar escala. La computación cuántica hace lo contrario: conserva el rigor representando el espacio exacto en el hardware, y su precio hoy es un hardware todavía pequeño."
+    },
+    {
+      stem: "Sobre los cuatro hitos fundacionales, ¿cuál asociación es correcta?",
+      options: [
+        "Grover (1994) — factorización en tiempo polinomial.",
+        "Shor (1994) — factorización en tiempo polinomial, que vuelve vulnerable a RSA.",
+        "Deutsch (1984) — protocolo de distribución de claves BB84.",
+        "BB84 — algoritmo de búsqueda con aceleración cuadrática √N."
+      ],
+      correct: 1,
+      expl: "BB84 es de Bennett y Brassard (1984); Deutsch (1985) propuso el computador cuántico universal; Shor (1994) dio la factorización en tiempo polinomial que amenaza a RSA; Grover (1996) dio la búsqueda con aceleración cuadrática √N."
+    },
+    {
+      stem: "¿Cuál afirmación describe con mayor precisión las aceleraciones cuánticas?",
+      options: [
+        "Todo problema se acelera exponencialmente en un computador cuántico.",
+        "Shor logra aceleración exponencial pero solo para problemas con estructura (como factorizar); Grover da solo aceleración cuadrática (√N), aunque para una clase mucho más amplia de problemas.",
+        "Grover ofrece la aceleración exponencial más general que existe.",
+        "La aceleración exponencial es una propiedad de la máquina, no del problema."
+      ],
+      correct: 1,
+      expl: "La ventaja depende del problema, no de la máquina. Shor explota la estructura de la factorización para un salto exponencial; Grover solo consigue √N, pero aplica a una clase muy amplia de búsquedas. No existe aceleración exponencial universal para cualquier tarea."
+    },
+    {
+      stem: "¿Qué caracteriza a la era NISQ (la de hoy)?",
+      options: [
+        "Qubits lógicos con errores ya corregidos por código de superficie.",
+        "Cientos de qubits físicos ruidosos con mitigación (no corrección) de errores; útil para química pequeña, heurísticas y experimentos.",
+        "Millones de qubits capaces de ejecutar el algoritmo de Shor a escala.",
+        "Máquinas que ya reemplazan a los supercomputadores clásicos."
+      ],
+      correct: 1,
+      expl: "NISQ = Noisy Intermediate-Scale Quantum: cientos de qubits físicos ruidosos donde los errores se mitigan, no se corrigen. La corrección real y los qubits lógicos pertenecen a la era FTQC (tolerante a fallos), necesaria para Shor a escala y biomoléculas exactas."
+    },
+    {
+      stem: "Un titular anuncia '5 minutos frente a 10²⁵ años'. Según el criterio del capítulo para leer el bombo, ¿cuál es la pregunta crítica correcta?",
+      options: [
+        "Ninguna: si es supremacía cuántica, ya demuestra utilidad práctica.",
+        "'¿En qué tarea?' — y si esa 'supremacía' en un test artificial implica de verdad una utilidad que necesites, recordando que las hojas de ruta serias cuentan qubits lógicos, no físicos.",
+        "Solo importa cuántos qubits físicos tiene la máquina.",
+        "Que ya se puede confiar en que reemplazará a los clásicos para todo."
+      ],
+      correct: 1,
+      expl: "La destreza central del capítulo: ante cada afirmación preguntar '¿en qué tarea?'. La supremacía en un test artificial no implica utilidad, y por eso las hojas de ruta honestas cuentan qubits lógicos (corregidos) y no los físicos en bruto."
+    },
+    {
+      stem: "Respecto a la amenaza del algoritmo de Shor sobre RSA y la respuesta defensiva:",
+      options: [
+        "No hay urgencia: basta esperar a que exista la máquina para migrar la seguridad.",
+        "La lógica de 'cosechar ahora, descifrar después' obliga a migrar ya a criptografía post-cuántica: ML-KEM (Kyber) para intercambio de claves y ML-DSA (Dilithium) para firmas.",
+        "Es Grover, no Shor, quien rompe RSA.",
+        "La única defensa posible es BB84."
+      ],
+      correct: 1,
+      expl: "Shor convierte la factorización de exponencial a polinomial, rompiendo RSA. Como un adversario puede 'cosechar ahora y descifrar después', hay que migrar ya a criptografía post-cuántica: los estándares ML-KEM (Kyber) y ML-DSA (Dilithium). BB84 es otra vía (comunicación), pero no la 'única'."
+    },
+    {
+      stem: "¿Por qué el aprendizaje automático cuántico (QML) NO es simplemente 'la IA, pero más rápida'?",
+      options: [
+        "Porque el hardware cuántico es intrínsecamente más lento que una GPU.",
+        "Por límites duros: las mesetas estériles (gradientes que se desvanecen) y el cuello de botella de carga de datos/QRAM, donde codificar N puntos clásicos puede costar O(N) y matar la aceleración.",
+        "Porque la IA clásica ya alcanzó el óptimo teórico y no se puede mejorar.",
+        "Porque el QML no utiliza datos de entrenamiento."
+      ],
+      correct: 1,
+      expl: "El QML enfrenta obstáculos propios: las mesetas estériles (barren plateaus), análogas a los gradientes que se desvanecen en redes profundas, y el costo de cargar datos clásicos (QRAM), que puede ser O(N) y anular cualquier ventaja. Por eso no es 'IA acelerada' sin más."
+    }
+  ];
+
+  const form = document.getElementById('qcq-form');
+  const result = document.getElementById('qcq-result');
+
+  function render(){
+    form.innerHTML = '';
+    QUIZ.forEach((q, i) => {
+      const box = document.createElement('div');
+      box.className = 'qcq-q';
+      box.id = 'qcq-q' + i;
+      const stem = document.createElement('div');
+      stem.className = 'qcq-stem';
+      stem.innerHTML = '<span class="qcq-num">' + (i+1) + '.</span>' + q.stem;
+      box.appendChild(stem);
+      q.options.forEach((opt, j) => {
+        const lab = document.createElement('label');
+        lab.className = 'qcq-opt';
+        lab.setAttribute('data-opt', j);
+        lab.innerHTML = '<input type="radio" name="q'+i+'" value="'+j+'"><span>'+opt+'</span>';
+        box.appendChild(lab);
+      });
+      form.appendChild(box);
+    });
+    result.hidden = true;
+    result.innerHTML = '';
+  }
+
+  function grade(){
+    let score = 0, unanswered = 0;
+    QUIZ.forEach((q, i) => {
+      const box = document.getElementById('qcq-q'+i);
+      const labs = box.querySelectorAll('.qcq-opt');
+      const picked = form.querySelector('input[name="q'+i+'"]:checked');
+      labs.forEach(l => l.classList.remove('correct','wrong'));
+      // remove old explanation/mark
+      box.querySelectorAll('.qcq-expl,.qcq-mark').forEach(e => e.remove());
+      const chosen = picked ? parseInt(picked.value,10) : null;
+      if (chosen === null) unanswered++;
+      // mark correct option
+      labs[q.correct].classList.add('correct');
+      if (chosen !== null && chosen !== q.correct) labs[chosen].classList.add('wrong');
+      if (chosen === q.correct) score++;
+      // header mark
+      const mark = document.createElement('span');
+      mark.className = 'qcq-mark ' + (chosen===q.correct ? 'ok' : 'no');
+      mark.textContent = chosen===q.correct ? '  ✓ Correcta' : '  ✗ Incorrecta';
+      box.querySelector('.qcq-stem').appendChild(mark);
+      // explanation
+      const ex = document.createElement('div');
+      ex.className = 'qcq-expl';
+      ex.innerHTML = '<b>Explicación:</b> ' + q.expl;
+      box.appendChild(ex);
+    });
+
+    const name = (document.getElementById('qcq-student').value || '').trim();
+    const pct = Math.round(score/QUIZ.length*100);
+    let cls = 'low', msg = 'Repasa el capítulo y vuelve a intentarlo: el objetivo es distinguir superposición de mezcla clásica y separar el bombo de la evidencia.';
+    if (score >= 8){ cls='good'; msg='¡Excelente! Dominas los conceptos clave del Capítulo 1.'; }
+    else if (score >= 6){ cls='mid'; msg='Bien encaminado. Revisa las que fallaste con sus explicaciones.'; }
+    result.className = 'qcq-result ' + cls;
+    result.hidden = false;
+    let head = name ? (name + ', tu resultado:') : 'Tu resultado:';
+    let warn = unanswered ? '<div class="qcq-warn">Dejaste '+unanswered+' pregunta(s) sin responder (contadas como incorrectas).</div>' : '';
+    result.innerHTML = '<span class="score">'+score+' / '+QUIZ.length+'  ('+pct+'%)</span>'+head+' '+msg+warn;
+    result.scrollIntoView({behavior:'smooth', block:'nearest'});
+  }
+
+  document.getElementById('qcq-grade').addEventListener('click', grade);
+  document.getElementById('qcq-reset').addEventListener('click', function(){
+    render();
+    document.getElementById('qcq-student').value='';
+    window.scrollTo({top: document.getElementById('qc-quiz').offsetTop-80, behavior:'smooth'});
+  });
+
+  render();
+})();
+</script>
+
+<hr />
+<h2 id="version-para-calificacion-google-forms">Versión para calificación (Google Forms)<a class="headerlink" href="#version-para-calificacion-google-forms" title="Enlace a esta sección">&para;</a></h2>
+<p>Si vas a tomar el quiz <strong>para nota</strong>, usa el enlace que compartió el profesor. Esa versión se califica sola y registra tu nombre y tu puntaje.</p>
+<blockquote>
+<p>Profesor: el enlace se pega aquí una vez creado el formulario. (Instrucciones en el archivo <code>quiz_google_form.gs</code> entregado con el sitio.)</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../capitulo-01/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Capítulo 1">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Capítulo 1
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../capitulo-02/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Capítulo 2">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Capítulo 2
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2026 Centro de Excelencia en Computación Cuántica e Inteligencia Artificial · Departamento de Física · Universidad Nacional de Colombia, Sede Medellín · Contenido bajo licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a>
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/alcidesmontoyac" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener" title="Canal de YouTube del curso" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="../../javascripts/tex-mml-svg.js"></script>
+      
+    
+  </body>
+</html>
