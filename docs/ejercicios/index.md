@@ -28,6 +28,14 @@ Series de ejercicios por capítulo para afianzar los conceptos. Empieza por los 
 
     [:octicons-arrow-right-24: Resolver](capitulo-02.md)
 
+-   :material-help-circle:{ .lg .middle } __Quiz — Clase 5__
+
+    ---
+
+    Veinte preguntas que se **califican solas** (concepto + ejercicios de cálculo) sobre álgebra lineal y notación de Dirac.
+
+    [:octicons-arrow-right-24: Presentar quiz](quiz-clase-05.md)
+
 </div>
 
 !!! note "Más series por capítulo"

@@ -36,7 +36,8 @@ Página del [Capítulo 2](../libro/capitulo-02.md) del libro.
 
 ## Ejercicios y evaluación
 
-[Ejercicios del Capítulo 2](../ejercicios/capitulo-02.md). La evaluación con nota del Capítulo 2 se realiza en GitHub Classroom (el enlace de invitación se anuncia en clase).
+- [**Quiz de la Clase 5**](../ejercicios/quiz-clase-05.md): 20 preguntas autocalificables (concepto + ejercicios de cálculo) que se corrigen al instante.
+- [Ejercicios del Capítulo 2](../ejercicios/capitulo-02.md).
 
 ---
 
