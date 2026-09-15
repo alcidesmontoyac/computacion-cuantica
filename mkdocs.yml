@@ -117,7 +117,8 @@ nav:
       - Clase 1 — ¿Qué es un qubit?: curso/clase-01.md
       - Clase 2 — Esfera de Bloch y NISQ: curso/clase-02.md
       - Clase 3 — Aplicaciones y cierre del Cap. 1: curso/clase-03.md
-      - Clase 4 — Fundamentos matemáticos: curso/clase-04.md
+      - Clase 4 — Internet cuántico y arranque del Cap. 2: curso/clase-04.md
+      - Clase 5 — Álgebra lineal y notación de Dirac: curso/clase-05.md
   - Libro:
       - libro/index.md
       - Cap. 1 — Introducción y aplicaciones: libro/capitulo-01.md
