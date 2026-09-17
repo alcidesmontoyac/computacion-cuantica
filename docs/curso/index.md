@@ -32,8 +32,9 @@ Al terminar el curso podrás:
 | 3 | Aplicaciones y cierre del Capítulo 1 | [Cap. 1](../libro/capitulo-01.md) | [Ver](clase-03.md) | [Ejercicios](../ejercicios/capitulo-01.md) |
 | 4 | Internet cuántico y arranque de las matemáticas (Cap. 2) | [Cap. 2](../libro/capitulo-02.md) | [Ver](clase-04.md) | [Práctica 2](../practicas/practica-02-braket-pauli.md) · [Ejercicios](../ejercicios/capitulo-02.md) |
 | 5 | Álgebra lineal y notación de Dirac | [Cap. 2](../libro/capitulo-02.md) | [Ver](clase-05.md) | [Evaluación Cap. 2](../ejercicios/capitulo-02.md) |
-| 6 | Mecánica cuántica y postulados | [Cap. 3](../libro/capitulo-03.md) | — | — |
-| 7 | Información cuántica: Bloch, entrelazamiento, Bell | [Cap. 4](../libro/capitulo-04.md) | — | — |
+| 6 | Stern-Gerlach y matrices de Pauli | [Cap. 2](../libro/capitulo-02.md) | [Ver](clase-06.md) | [Ejercicios](../ejercicios/capitulo-02.md) |
+| 7 | Mecánica cuántica y postulados | [Cap. 3](../libro/capitulo-03.md) | — | — |
+| 8 | Información cuántica: Bloch, entrelazamiento, Bell | [Cap. 4](../libro/capitulo-04.md) | — | — |
 
 > El plan se actualiza a medida que avanza el semestre. Cada fila enlaza a la página de la clase con todo su material.
 
