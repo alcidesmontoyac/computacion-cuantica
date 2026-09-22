@@ -36,6 +36,14 @@ Series de ejercicios por capítulo para afianzar los conceptos. Empieza por los 
 
     [:octicons-arrow-right-24: Presentar quiz](quiz-clase-05.md)
 
+-   :material-help-circle:{ .lg .middle } __Quiz — Cap. 2 (parte final)__
+
+    ---
+
+    Veinte preguntas autocalificables sobre **unitarias, compuertas, no-clonación, producto tensorial, entrelazamiento** y espacio de Hilbert (diapositivas 30–47).
+
+    [:octicons-arrow-right-24: Presentar quiz](quiz-cap02-avanzado.md)
+
 </div>
 
 !!! note "Más series por capítulo"
