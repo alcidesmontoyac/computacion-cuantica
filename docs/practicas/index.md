@@ -23,6 +23,14 @@ Cada práctica es un notebook de Python listo para ejecutar. Puedes abrirlo en *
 
     [:octicons-arrow-right-24: Abrir práctica](practica-02-braket-pauli.md)
 
+-   :material-numeric-3-circle:{ .lg .middle } __Práctica 3 — AWS Braket en Colab__
+
+    ---
+
+    Ejecuta circuitos con el SDK de Amazon Braket: simulador local (gratis, sin AWS) y, opcional, hardware real en la nube. Superposición, Bell y GHZ.
+
+    [:octicons-arrow-right-24: Abrir práctica](practica-03-braket.md)
+
 </div>
 
 !!! note "Más prácticas cada clase"

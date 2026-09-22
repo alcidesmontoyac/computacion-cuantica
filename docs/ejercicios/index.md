@@ -44,6 +44,14 @@ Series de ejercicios por capítulo para afianzar los conceptos. Empieza por los 
 
     [:octicons-arrow-right-24: Presentar quiz](quiz-cap02-avanzado.md)
 
+-   :material-help-circle:{ .lg .middle } __Quiz — Cap. 4 (información cuántica)__
+
+    ---
+
+    Veinte preguntas autocalificables sobre **qubits, esfera de Bloch, entrelazamiento, EPR/Bell (CHSH), no-clonación** y fidelidad.
+
+    [:octicons-arrow-right-24: Presentar quiz](quiz-cap04.md)
+
 </div>
 
 !!! note "Más series por capítulo"

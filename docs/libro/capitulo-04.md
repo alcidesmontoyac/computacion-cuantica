@@ -24,4 +24,4 @@ Un experimento real relacionado: [entrelazamiento átomo-fotón a escala metropo
 
 ## Enlaces del capítulo
 
-- Ejercicios: [próximamente]
+- Autoevaluación: [Quiz autocalificable del Capítulo 4](../ejercicios/quiz-cap04.md) — 20 preguntas sobre qubits, esfera de Bloch, entrelazamiento, EPR/Bell y no-clonación.

@@ -129,6 +129,7 @@ nav:
       - practicas/index.md
       - Práctica 1 — Tu primer qubit: practicas/practica-01-primer-qubit.md
       - Práctica 2 — Bra-ket y matrices de Pauli: practicas/practica-02-braket-pauli.md
+      - Práctica 3 — AWS Braket en Colab: practicas/practica-03-braket.md
   - Ejercicios:
       - ejercicios/index.md
       - Capítulo 1: ejercicios/capitulo-01.md
@@ -136,6 +137,7 @@ nav:
       - Capítulo 2: ejercicios/capitulo-02.md
       - Quiz — Clase 5: ejercicios/quiz-clase-05.md
       - Quiz — Cap. 2 (unitarias, tensor, entrelazamiento): ejercicios/quiz-cap02-avanzado.md
+      - Quiz — Cap. 4 (información cuántica): ejercicios/quiz-cap04.md
       - Clase 6 — Stern-Gerlach y matrices de Pauli: curso/clase-06.md
       - Clase 7 — Unitarias, entrelazamiento y tu primer qubit: curso/clase-07.md
   - Recursos:

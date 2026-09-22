@@ -25,7 +25,8 @@ Cerramos el Capítulo 2 (diapositivas 30 a 47) y damos el salto a la práctica: 
 
 ## Práctica
 
-[:material-laptop: Práctica 1 — tu primer qubit](../practicas/practica-01-primer-qubit.md): crea un qubit, ponlo en superposición con una compuerta Hadamard, mídelo y visualiza el resultado.
+- [:material-laptop: Práctica 1 — tu primer qubit (Qiskit)](../practicas/practica-01-primer-qubit.md): crea un qubit, ponlo en superposición con una compuerta Hadamard, mídelo y visualiza el resultado.
+- [:simple-googlecolab: Práctica 3 — AWS Braket en Colab](../practicas/practica-03-braket.md): el mismo experimento con el SDK de Braket, en el simulador local (gratis) y, opcional, en hardware real de AWS.
 
 ## Hardware en la nube — AWS Braket
 
