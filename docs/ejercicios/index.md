@@ -52,6 +52,14 @@ Series de ejercicios por capítulo para afianzar los conceptos. Empieza por los 
 
     [:octicons-arrow-right-24: Presentar quiz](quiz-cap04.md)
 
+-   :material-flask-outline:{ .lg .middle } __Ejercicio interactivo — qollab__
+
+    ---
+
+    Programa tus **primeros circuitos** con Qiskit en el navegador (superposición, Bell, rotaciones, Grover y ruido). Seis lecciones cortas, gratis.
+
+    [:octicons-arrow-right-24: Abrir laboratorio](qollab-primeros-circuitos.md)
+
 </div>
 
 !!! note "Más series por capítulo"

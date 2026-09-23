@@ -4,9 +4,13 @@
 
 Cómo se codifica, mide y protege la información en un mundo cuántico: el qubit, la esfera de Bloch, el entrelazamiento y sus límites.
 
+## Leer el capítulo
+
+[:material-book-open-page-variant: Leer el Capítulo 4 (PDF)](../assets/libro/capitulo-04.pdf){ .md-button .md-button--primary }
+
 ## Diapositivas
 
-[:material-file-download: Descargar diapositivas del Capítulo 4](../assets/slides/cap04_informacion_cuantica.pdf){ .md-button .md-button--primary }
+[:material-file-download: Descargar diapositivas del Capítulo 4](../assets/slides/cap04_informacion_cuantica.pdf){ .md-button }
 
 ## Temas
 
