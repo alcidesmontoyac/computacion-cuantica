@@ -60,6 +60,30 @@ Series de ejercicios por capítulo para afianzar los conceptos. Empieza por los 
 
     [:octicons-arrow-right-24: Abrir laboratorio](qollab-primeros-circuitos.md)
 
+-   :material-language-python:{ .lg .middle } __Quiz de programación 1 — Qiskit__
+
+    ---
+
+    Veinte preguntas donde **compilas y ejecutas** circuitos de Qiskit (superposición, medición, Bell) para responder.
+
+    [:octicons-arrow-right-24: Presentar quiz](quiz-prog-01-qiskit.md)
+
+-   :material-language-python:{ .lg .middle } __Quiz de programación 2 — rotaciones y Grover__
+
+    ---
+
+    Rotaciones RY/RZ, interferencia y el algoritmo de Grover: ejecuta cada programa y reporta lo que observas.
+
+    [:octicons-arrow-right-24: Presentar quiz](quiz-prog-02-rotaciones-grover.md)
+
+-   :material-language-python:{ .lg .middle } __Quiz de programación 3 — AWS Braket__
+
+    ---
+
+    Simulador local de Braket: Bell, GHZ, conteos y buenas prácticas. Corre el código y responde.
+
+    [:octicons-arrow-right-24: Presentar quiz](quiz-prog-03-braket.md)
+
 </div>
 
 !!! note "Más series por capítulo"

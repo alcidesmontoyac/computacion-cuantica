@@ -139,6 +139,9 @@ nav:
       - Quiz — Cap. 2 (unitarias, tensor, entrelazamiento): ejercicios/quiz-cap02-avanzado.md
       - Quiz — Cap. 4 (información cuántica): ejercicios/quiz-cap04.md
       - Interactivo — primeros circuitos (qollab): ejercicios/qollab-primeros-circuitos.md
+      - Quiz de prog. 1 — Qiskit (circuitos y Bell): ejercicios/quiz-prog-01-qiskit.md
+      - Quiz de prog. 2 — rotaciones y Grover: ejercicios/quiz-prog-02-rotaciones-grover.md
+      - Quiz de prog. 3 — AWS Braket: ejercicios/quiz-prog-03-braket.md
       - Clase 6 — Stern-Gerlach y matrices de Pauli: curso/clase-06.md
       - Clase 7 — Unitarias, entrelazamiento y tu primer qubit: curso/clase-07.md
   - Recursos:
